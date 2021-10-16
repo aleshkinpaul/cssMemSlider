@@ -6,7 +6,11 @@
   --font-color-1: #F2BE24;
   --font-color-2: #D7D8C9;
   --font-size-title: 3rem;
+  --font-size-mobile-title: 2rem;
   --font-size-text: 2rem;
+  --font-size-mobile-text: 1.5rem;
+  --font-size-footer: 1.3rem;
+  --font-size-mobile-footer: 1rem;
 }
 
 * {
@@ -52,7 +56,7 @@ a:hover {
 }
 
 .title {
-  font-size: 3rem;
+  font-size: var(--font-size-title);
   font-family: "Impact", "Arial";
   color: var(--font-color-1);
   text-transform: uppercase;
@@ -91,7 +95,7 @@ a:hover {
 }
 
 .slider-text-container {
-  font-size: 1.5rem;
+  font-size: var(--font-size-text);
   overflow: hidden;
 }
 
@@ -175,7 +179,7 @@ a:hover {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  font-size: 1.3rem;
+  font-size: var(--font-size-footer);
 }
 
 @media (max-width: 1440px) {
@@ -191,7 +195,7 @@ a:hover {
   }
 
   .title {
-    font-size: 2rem;
+    font-size: var(--font-size-mobile-title);
   }
 
   .slider-wrapper {
@@ -203,6 +207,10 @@ a:hover {
     display: flex;
     flex-direction: column;
     width: 92%;
+  }
+
+  .slider-text-container {
+    font-size: var(--font-size-mobile-text);
   }
 
   .slider-buttons-container {
@@ -226,7 +234,7 @@ a:hover {
 
   .footer-container {
     padding: 2rem;
-    font-size: 1rem;
+    font-size: var(--font-size-mobile-footer);
   }
 }
 
