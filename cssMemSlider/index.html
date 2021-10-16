@@ -4,23 +4,63 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/favicon.ico">
+  <title>Memes slider</title>
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1 class="title">Nostalgic slider</h1>
+    <div class="container header-container">
+      <h1 class="title">Memes slider</h1>
     </div>
   </header>
   <main>
-    <div class="container">
-      
+    <div class="container slider-container">
+      <div class="slider-wrapper">
+        <ul class="slider-list">
+          <li class="slide">
+            <img src="./assets/mem1.jpg" alt="" class="mem-image">
+          </li>
+          <li class="slide">
+            <img src="./assets/mem2.jpg" alt="" class="mem-image">
+          </li>
+          <li class="slide">
+            <img src="./assets/mem3.jpg" alt="" class="mem-image">
+          </li>
+          <li class="slide">
+            <img src="./assets/mem4.jpg" alt="" class="mem-image">
+          </li>
+        </ul>
+      </div>
+      <div class="slider-buttons-container">
+        <input type="radio" class="slider-button" name="slider-button-name" id="slider-button-1">
+        <input type="radio" class="slider-button" name="slider-button-name" id="slider-button-2">
+        <input type="radio" class="slider-button" name="slider-button-name" id="slider-button-3">
+        <input type="radio" class="slider-button" name="slider-button-name" id="slider-button-4">
+      </div>
+      <div class="slider-labels-container">
+        <label for="slider-button-1" class="slider-button-label"></label>
+        <label for="slider-button-2" class="slider-button-label"></label>
+        <label for="slider-button-3" class="slider-button-label"></label>
+        <label for="slider-button-4" class="slider-button-label"></label>
+      </div>
+      <div class="slider-text">
+        <ul class="mem-title-list">
+          <li class="mem-title">One does not simply push to master</li>
+          <li class="mem-title">Knows nothing about Quidditch - Gets most important position</li>
+          <li class="mem-title">You can't miss the deadline If you make the deadline</li>
+          <li class="mem-title">Go to McDonalds. Get Happy Meal. Extra chicken nugget!</li>
+        </ul>
+      </div>
     </div>
   </main>
   <footer>
     <div class="container">
-      
+      <div class="footer-info">
+        <span>&copy; 2021</span>
+        <a class="footer-info-link footer-info-link-rs-school" href="https://rs.school/js/">The Rolling Scopes School</a>
+        <a class="footer-info-link" href="http://github.com/aleshkinpaul/">aleshkinpaul</a>
+      </div>
     </div>
   </footer>
 </body>

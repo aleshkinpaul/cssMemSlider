@@ -1,0 +1,56 @@
+:root {
+  --bg-dark: #A4A68A;
+  --bg-light: #D7D8C9;
+  --bg-buttons: #F2BE24;
+  --font-color-1: #D94C1A;
+  --font-color-2: #57523E;
+  --font-size-title: 30px;
+  --font-size-text: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", "Arial";
+}
+
+li{
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1400px;
+  padding: 0;
+  background-color: var(--bg-light);
+}
+
+.header-container {
+  background-color: var(--bg-dark);
+}
+
+.slider-container {
+  padding-top: 30px;
+}
+
+.slider-wrapper {
+  margin: 0 auto;
+  width: 50%;
+  overflow: hidden;
+}
+
+.slider-list {
+  display: flex;
+  width: 400%;
+}
+
+.slide {
+  width: 100%;
+}
+
+.mem-image {
+  width: 100%;
+}
