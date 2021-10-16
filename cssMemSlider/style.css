@@ -231,3 +231,9 @@ a:hover {
     padding: 2rem 0;
   }
 }
+
+@media (max-width: 200px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}
