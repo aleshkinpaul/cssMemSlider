@@ -3,7 +3,7 @@
   --bg-main: #57523E;
   --bg-buttons: #F2BE24;
   --bg-overlay: #A4A68A;
-  --font-color-1: #D94C1A;
+  --font-color-1: #F2BE24;
   --font-color-2: #D7D8C9;
   --font-size-title: 3rem;
   --font-size-text: 2rem;
@@ -43,6 +43,8 @@ li{
 
 .title {
   font-size: 3rem;
+  font-family: "Impact", "Arial";
+  color: var(--font-color-1);
   text-transform: uppercase;
 }
 
@@ -54,13 +56,12 @@ li{
   overflow: hidden;
 }
 
-.slider-container {
-  margin: 0 auto;
-}
-
 .slider-list {
+  margin: 0 auto;
   display: flex;
   width: 400%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .slide {
@@ -70,6 +71,68 @@ li{
 
 .mem-image {
   width: 100%;
+}
+
+.slider-subcontainer {
+  margin: 0 auto;
+  width: 70rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-text-container {
+  font-size: 1.5rem;
+  overflow: hidden;
+}
+
+.mem-title-list {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 400%;
+}
+
+.mem-title {
+  width: 100%;
+}
+
+.slider-buttons-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.slider-button-input {
+  display: none;
+}
+
+.slider-button {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: var(--bg-buttons);
+  border: 1px solid var(--bg-buttons);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.slider-button-label {
+  padding: 0.4rem;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.slider-button-label input:checked ~ .slider-button {
+  background-color: transparent;
+}
+
+.slider-button-label:hover .slider-button {
+  opacity: 0.7;
+}
+
+.slider-button-label:active .slider-button {
+  opacity: 0.2;
+}
+
+.slider-button-label:focus .slider-button {
+  background-color: transparent;
 }
 
 @media (max-width: 1440px) {
@@ -91,5 +154,30 @@ li{
   .slider-wrapper {
     width: 92%;
     height: 56.25vw;
+  }
+
+  .slider-subcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+  }
+
+  .slider-buttons-container {
+    justify-content: center;
+    order: 1;
+  }
+
+  .slider-text-container {
+    order: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .slider-wrapper {
+    padding: 2rem 0 1rem;
+  }
+
+  .slider-buttons-container {
+    margin-bottom: 1rem;
   }
 }

@@ -17,7 +17,6 @@
   <main>
     <div class="container">
       <div class="slider-wrapper">
-        <div class="slider-container">
           <ul class="slider-list">
             <li class="slide">
               <img src="./assets/mem1.jpg" alt="" class="mem-image">
@@ -32,27 +31,34 @@
               <img src="./assets/mem4.jpg" alt="" class="mem-image">
             </li>
           </ul>
+      </div>
+      <div class="slider-subcontainer">
+        <div class="slider-text-container">
+          <ul class="mem-title-list">
+            <li class="mem-title">One does not simply push to master</li>
+            <li class="mem-title">Knows nothing about Quidditch - Gets most important position</li>
+            <li class="mem-title">You can't miss the deadline If you make the deadline</li>
+            <li class="mem-title">Go to McDonalds. Get Happy Meal. Extra chicken nugget!</li>
+          </ul>
         </div>
-      </div>
-      <div class="slider-buttons-container">
-        <input type="radio" class="slider-button" name="slider-button-name" id="slider-button-1">
-        <input type="radio" class="slider-button" name="slider-button-name" id="slider-button-2">
-        <input type="radio" class="slider-button" name="slider-button-name" id="slider-button-3">
-        <input type="radio" class="slider-button" name="slider-button-name" id="slider-button-4">
-      </div>
-      <div class="slider-labels-container">
-        <label for="slider-button-1" class="slider-button-label"></label>
-        <label for="slider-button-2" class="slider-button-label"></label>
-        <label for="slider-button-3" class="slider-button-label"></label>
-        <label for="slider-button-4" class="slider-button-label"></label>
-      </div>
-      <div class="slider-text">
-        <ul class="mem-title-list">
-          <li class="mem-title">One does not simply push to master</li>
-          <li class="mem-title">Knows nothing about Quidditch - Gets most important position</li>
-          <li class="mem-title">You can't miss the deadline If you make the deadline</li>
-          <li class="mem-title">Go to McDonalds. Get Happy Meal. Extra chicken nugget!</li>
-        </ul>
+        <div class="slider-buttons-container">
+          <label for="slider-button-1" class="slider-button-label">
+            <input type="radio" class="slider-button-input" name="slider-button-name" id="slider-button-1" checked>
+            <button class="slider-button"></button>
+          </label>
+          <label for="slider-button-2" class="slider-button-label">
+            <input type="radio" class="slider-button-input" name="slider-button-name" id="slider-button-2">
+            <button class="slider-button"></button>
+          </label>
+          <label for="slider-button-3" class="slider-button-label">
+            <input type="radio" class="slider-button-input" name="slider-button-name" id="slider-button-3">
+            <button class="slider-button"></button>
+          </label>
+          <label for="slider-button-4" class="slider-button-label">
+            <input type="radio" class="slider-button-input" name="slider-button-name" id="slider-button-4">
+            <button class="slider-button"></button>
+          </label>
+        </div>
       </div>
     </div>
   </main>
